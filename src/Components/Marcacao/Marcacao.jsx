@@ -13,6 +13,7 @@ import { SectionAppointment } from "./MarcacaoStyles";
 import LogoImg from "../../Images/title.svg";
 import BgImg from "../../Images/marcacao.jpg";
 import IndexForm from "./Form/IndexForm";
+import api from "../../Services/api";
 
 const Marcacao = () => {
   const [Selected, setSelected] = useState(0);
@@ -55,7 +56,7 @@ const Marcacao = () => {
         phone.length === 9
       ) {
         setLoading(true);
-        axios
+        api
           .post("/api/create-event", { name, phone, startDate, endDate })
           .then((response) => {
             console.log(response.data);
