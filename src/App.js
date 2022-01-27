@@ -14,17 +14,12 @@ import Price from "./Components/Price/Price";
 import Slider from "./Components/Slider/Slider";
 import SliderText from "./Components/SliderText/SliderText";
 import GlobalStyle from "./GlobalStyles";
-import { getUrl } from "./utils";
-
-console.log(process.env.REACT_APP_ENVIRONMENT);
 
 function App() {
   const [isOpen, setIsOpen] = useState(0);
   const toogle = () => {
     setIsOpen(!isOpen);
   };
-
-  getUrl();
 
   return (
     <>
