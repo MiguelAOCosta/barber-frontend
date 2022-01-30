@@ -1,75 +1,18 @@
 import styled, { keyframes } from "styled-components";
 
-export const AppointmentForm = styled.form`
+export const SectionForm = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const FormContainer = styled.form`
   max-width: 700px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 300px));
   place-content: center;
   grid-gap: 1rem;
-  grid-row-gap: 5rem;
-`;
-
-export const Form = styled.div`
-  display: flex;
-  border-bottom: 1px solid #999;
-  max-width: 300px;
-  position: relative;
-`;
-
-export const InputForm = styled.input`
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  width: 100%;
-  font-size: 1rem;
-
-  &:focus {
-    outline: none;
-  }
-`;
-
-export const Selectable = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-`;
-
-export const InfoSlected = styled.span`
-  color: #fff;
-`;
-
-export const Select = styled.div`
-  position: absolute;
-  background-color: #212121;
-  border: 1px solid #333;
-  padding: 0.5rem;
-  z-index: 10;
-  width: 100%;
-  text-align: center;
-`;
-
-export const List = styled.ul`
-  color: #999;
-  list-style: none;
-`;
-
-export const Item = styled.li`
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  user-select: none;
-
-  &:hover {
-    background-color: #974f31;
-    color: #fff;
-  }
-`;
-
-export const SubmitForm = styled.div`
-  display: flex;
-  align-items: center;
-  color: #fff;
+  grid-row-gap: 3rem;
 `;
 
 export const BtnForm = styled.button`
@@ -81,11 +24,18 @@ export const BtnForm = styled.button`
   padding: 0.5rem 3rem;
   color: #fff;
   cursor: pointer;
+  z-index: 0;
   transition: transform 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.05);
   }
+`;
+
+export const SubmitForm = styled.div`
+  display: flex;
+  align-items: center;
+  color: #fff;
 `;
 
 const Ring = keyframes`

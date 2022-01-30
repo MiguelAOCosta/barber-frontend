@@ -7,7 +7,7 @@ import Drop from "./Components/DropDownNav/Drop";
 import Footer from "./Components/Footer/Footer";
 import Gallery from "./Components/Gallery/Gallery";
 import Info from "./Components/Info/Info";
-import Marcacao from "./Components/Marcacao/Marcacao";
+import Form from "./Components/Form/Form";
 import Nav from "./Components/Navigation/Nav";
 import Services from "./Components/OurServices/Services";
 import Price from "./Components/Price/Price";
@@ -30,7 +30,7 @@ function App() {
       <Slider />
       <About />
       <Services />
-      <Marcacao />
+      <Form />
       <Barbers />
       <SliderText />
       <Gallery />
